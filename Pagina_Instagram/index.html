@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0c1014;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        header>#btnVoltar {
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 2em;
+            border: 0px;
+
+            flex-basis: 50px;
+            align-self: center;
+        }
+
+        header>#btnVoltar:hover {
+            cursor: pointer;
+        }
+
+        header>#perfilHeader {
+            font-size: 1.3em;
+            margin: auto;
+        }
+
+        main {
+            margin-top: 30px;
+        }
+
+        main>#cardPerfil {
+            width: 90vw;
+            margin-bottom: 35px;
+            margin-left: 15px;
+
+            display: flex;
+        }
+
+        main>section>#infoPerfil {
+            padding: 10px;
+            width: 280px;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        main>section>#fotoPerfil {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: blue;
+
+            float: left;
+            margin: 0px 10px 0px 10px;
+        }
+
+        main>section>#fotoPerfil:hover {
+            cursor: pointer;
+        }
+
+        main>section>div>#perfilMain {
+            margin-bottom: 15px;
+            margin-left: 18px;
+
+            flex-basis: 90%;
+            flex-grow: 1;
+        }
+
+        main>section>div>#perfilMain:hover {
+            cursor: pointer;
+        }
+
+        #infoPerfil>#dadosPerfil {
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .perfilItem {
+            margin-left: 20px;
+
+            flex-basis: 30px;
+        }
+
+        .perfilItem:hover {
+            cursor: pointer;
+        }
+
+        #posts:hover {
+            cursor: text;
+        }
+
+        #bioPerfil p {
+            width: 90vw;
+            margin: 5px;
+            margin-left: 15px;
+        }
+
+        #interacao {
+            margin-top: 35px;
+            width: 100vw;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        #interacao>.btnInt {
+            background-color: #25292e;
+            border: 0px;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            margin-right: 10px;
+
+            flex-basis: 45vw;
+        }
+
+        #interacao>.btnInt:hover {
+            background-color: #444c55;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <button id="btnVoltar">
+
+            <botao><strong>‹</strong>
+        </button>
+        <p id="perfilHeader">conquistadecarros</p>
+    </header>
+    <main>
+        <section id="cardPerfil">
+            <img src="https://blog.autocompara.com.br/wp-content/uploads/2024/06/carros-esportivos.jpeg"
+                id="fotoPerfil"></img>
+            <div id="infoPerfil">
+                <p id="perfilMain">conquistacarros <strong>...</strong></p>
+                <div id="dadosPerfil">
+                    <p class="perfilItem" id="posts">224 posts</p>
+                    <p class="perfilItem" id="seguidores">1.959 seguidores</p>
+                    <p class="perfilItem" id="seguindo">3.333 seguindo</p>
+                </div>
+            </div>
+        </section>
+        <section id="bioPerfil">
+            <p><strong>Conquista Carros</strong></p>
+            <p>💫Sua jornada começa aqui, com os melhores seminovos!</p>
+            <p>🚘Sua agência de veículos</p>
+            <p>💰Compra, venda e consignação</p>
+            <p>🏦 Financiamento</p>
+            <p style="color:gray;">Rua Sergio da cunha 187,Lagoa Azul Sp 2457000, São Paulo 2457000</p>
+            <p> <a style="color:#6e70ff;" href="http://www.conquistacarrosnovos.com.br">
+                    ⧉ www.conquistacarrosnovos.com.br</a></p>
+        </section>
+        <section>
+            <div id="interacao">
+                <button class="btnInt"><strong>Seguindo ˅ </strong> </button>
+                <button class="btnInt"><strong>Enviar mensagem</strong></button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
