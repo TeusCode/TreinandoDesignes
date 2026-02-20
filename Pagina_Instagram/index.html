@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
     <style>
         * {
             margin: 0px;
@@ -47,7 +52,9 @@
         }
 
         main {
+            margin: auto;
             margin-top: 30px;
+            max-width: 555px;
         }
 
         main>#cardPerfil {
@@ -162,6 +169,9 @@
             font-size: 0.9em;
             margin-right: 10px;
 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-basis: 45vw;
         }
 
@@ -183,7 +193,7 @@
             display: none;
         }
 
-        section>.itemDestaque {
+        section>div>.itemDestaque {
             width: 70px;
             height: 70px;
             border-radius: 50%;
@@ -194,6 +204,43 @@
             flex-shrink: 0;
             flex-grow: 0;
         }
+
+        section>.story {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        section>.story>p {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        section>#selecaoConteudo {
+
+            margin-top: 20px;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .itemConteudo {
+            font-size: 2em;
+        }
+
+        #publicacoes {
+            padding-top: 5px;
+            width: 100%;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .itemPublicacao {
+            width: calc(100% /3 - 1px);
+            height: 250px;
+        }
     </style>
 
 </head>
@@ -202,7 +249,9 @@
     <header>
         <button id="btnVoltar">
 
-            <botao><strong>‹</strong>
+            <botao><strong><span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span></strong>
         </button>
         <p id="perfilHeader">conquistadecarros</p>
     </header>
@@ -237,30 +286,85 @@
         </section>
         <section>
             <div id="interacao">
-                <button class="btnInt"><strong>Seguindo ˅ </strong> </button>
+                <button class="btnInt"><strong style="display: flex; align-items: center;">Seguindo <span
+                            class="material-symbols-outlined">
+                            stat_minus_1
+                        </span></strong> </button>
                 <button class="btnInt"><strong>Enviar mensagem</strong></button>
             </div>
         </section>
 
         <section id="boxDestaques">
-            <img class="itemDestaque"
-                src="https://garagem360.com.br/wp-content/uploads/2021/12/volkswagen_gol_power_6.jpeg" alt="">
-            <img class="itemDestaque"
-                src="https://garagem360.com.br/wp-content/uploads/2021/12/volkswagen_gol_power_6.jpeg" alt="">
-            <img class="itemDestaque"
-                src="https://www.comprecar.com.br/storage/vehicles/thumb/ed3e08fd-9a3f-4978-8001-3b083bf910c9.webp"
-                alt="">
-            <img class="itemDestaque"
-                src="https://redecredauto-blog.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/11/09171520/278695-compra-de-carros-usados-com-muitos-quilometros-rodados-vale-a-pena.jpg"
-                alt="">
-            <img class="itemDestaque"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0_RZX6P9rd5y6rf4vx3upo7INqJicwXVPDw&s"
-                alt="">
-            <img class="itemDestaque"
-                src="https://portal.comunique-se.com.br/wp-content/uploads/2023/05/6d7c844b-58ec-4c28-bd93-8903c6d6c27c.jpg"
-                alt="">
-            <img class="itemDestaque"
-                src="https://garagem360.com.br/wp-content/uploads/2021/12/volkswagen_gol_power_6.jpeg" alt="">
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://cdn.autopapo.com.br/box/uploads/2021/07/09184034/chevrolet-chevette-sl-de-frente.jpg"
+                    alt="">
+                <p>1995 ⚙️</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://classic.exame.com/wp-content/uploads/2024/11/ED1269_Casual_Carro1.jpg?quality=70&strip=info&w=1024"
+                    alt="">
+                <p>Elétricos</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://www.comprecar.com.br/storage/vehicles/thumb/ed3e08fd-9a3f-4978-8001-3b083bf910c9.webp"
+                    alt="">
+                <p>Relíquias</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://redecredauto-blog.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/11/09171520/278695-compra-de-carros-usados-com-muitos-quilometros-rodados-vale-a-pena.jpg"
+                    alt="">
+                <p>Destaques</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0_RZX6P9rd5y6rf4vx3upo7INqJicwXVPDw&s"
+                    alt="">
+                <p>Clientes</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque"
+                    src="https://portal.comunique-se.com.br/wp-content/uploads/2023/05/6d7c844b-58ec-4c28-bd93-8903c6d6c27c.jpg"
+                    alt="">
+                <p>Tabela Fipe</p>
+            </div>
+            <div class="story">
+                <img class="itemDestaque" src="https://blog.superbid.net/wp-content/uploads/2021/09/Reliant-Robin.jpg"
+                    alt="">
+                <p>Modificados</p>
+            </div>
+        </section>
+        <section>
+            <div id="selecaoConteudo">
+                <div><span class="material-symbols-outlined itemConteudo"
+                        style="width: 60px; height: 40px; border-bottom: 3px solid white; text-align: center;">
+                        apps
+                    </span></div>
+                <div><span class="material-symbols-outlined itemConteudo">
+                        play_circle
+                    </span></div>
+                <div><span class="material-symbols-outlined itemConteudo">
+                        person
+                    </span></div>
+            </div>
+            <div id="publicacoes">
+                <img class="itemPublicacao" src="imagens/car1.png" alt="">
+                <img class="itemPublicacao" src="imagens/car2.png" alt="">
+                <img class="itemPublicacao"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSmokYnrbGhDE2lZcWLGlzHxULhM4pW9LsA&s"
+                    alt="">
+                <img class="itemPublicacao" src="https://www.autoracing.com.br/wp-content/uploads/2019/02/image001.jpg"
+                    alt="">
+                <img class="itemPublicacao"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRItrUZjrbVXnxgFd7YKrxcLmFRxy5PTVy1Mg&s"
+                    alt="">
+                <img class="itemPublicacao"
+                    src="https://cdn.acritica.net/img/pc/920/600/dn_arquivo/2025/12/1765505735.jpg" alt="">
+            </div>
+
         </section>
     </main>
 </body>
