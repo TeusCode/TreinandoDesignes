@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    /*Elementos Desaparecem:*/
+    header>#btnVoltar,
+    footer#menuFooter,
+    header>#perfilHeader {
+        display: none;
+    }
+
+    /*Menu lateral aparece:*/
+    main{
+        width: calc();
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        background-color: red;
+        max-width: 70px;
+        height: 100%;
+    }
+
+    ;
+
+    #menuLateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (min-width: 768px)
