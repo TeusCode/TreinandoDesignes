@@ -14,15 +14,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="cabecario">
         <div id="menuLateral">
 
             <div>
-                <div>
-                    <span class="material-symbols-outlined iconeFooter">
-                        photo_camera
-                    </span>
-                </div>
+                <span class="material-symbols-outlined iconeFooter">
+                    photo_camera
+                </span>
             </div>
 
             <div style="display: flex; flex-flow: column nowrap; justify-content: space-evenly;">
@@ -215,6 +213,22 @@
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyJLbSnI5B_R53OxRH_vT6-iD740TaeHsvg&s"
                 alt=""></div>
     </footer>
+    <script>
+        const header = document.getElementById('cabecario');
+        const iconesHeader = document.getElementsByClassName('iconeFooter')
+        const menuLt = document.getElementById('menuLateral');
+
+
+        /*
+        header.addEventListener('mouseenter', () => {
+            header.style = 'border-radius: 10px;;background-color:var(--dark-color); width:300px; justify-content:flex-start;'
+
+            iconesHeader[0].innerHTML = 'photo_camera'
+            menuLt.style = 'align-items:flex-start;'
+
+            iconesHeader[1].innerHTML = 'home <span style="font-size:0.5em">Página Principal</span>'
+        }) */
+    </script>
 </body>
 
 </html>

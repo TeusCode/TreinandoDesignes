@@ -29,16 +29,21 @@ body {
 }
 
 header {
-    display: flex;
-    margin: 10px;
+    margin-top: 0px;
     height: 30px;
+    padding: 10px;
+    padding-left: 25px;
+
+    display: flex;
     justify-content: center;
+    color: var(--dark-font-color);
 }
 
 header>#btnVoltar {
     background-color: var(--dark-color);
     font-size: var(--font-size-icones);
     border: 0px;
+    color: var(--dark-font-color);
 
     flex-basis: 50px;
     align-self: center;
