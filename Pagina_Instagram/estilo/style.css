@@ -10,16 +10,13 @@ body {
     background-color: #0c1014;
     height: 100vh;
     width: 100vw;
-
-    display: flex;
 }
 
 header {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
+    height: 30px;
+    justify-content: center;
 }
 
 header>#btnVoltar {
@@ -35,6 +32,10 @@ header>#btnVoltar:hover {
     cursor: pointer;
 }
 
+header>div#menuLateral {
+    display: none;
+}
+
 header>#perfilHeader {
     font-size: 1.3em;
     margin: auto;
@@ -44,12 +45,13 @@ main {
     justify-content: center;
     margin-top: 30px;
     max-width: 768px;
+    margin: auto;
 }
 
 main>#cardPerfil {
-    width: 90vw;
+    width: 100%;
     margin-bottom: 35px;
-    margin-left: 15px;
+
 
     display: flex;
 }
@@ -111,7 +113,7 @@ section>#infoPerfil>#dadosPerfil {
 }
 
 main>#bioPerfil p {
-    width: 90vw;
+    width: 100%;
     margin: 5px;
     margin-left: 15px;
 }
@@ -161,7 +163,7 @@ section>#interacao>.btnInt {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 45vw;
+    flex: 0 1 45vw;
 }
 
 section>#interacao>.btnInt:hover {
