@@ -14,7 +14,7 @@
     }
 
     #perfilMain {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     header {
@@ -32,8 +32,8 @@
     }
 
     .iconeFooter {
-        color: white;
-        font-size: 2.1em;
+        color: var(--dark-font-color);
+        font-size: var(--font-size-icones);
         margin-bottom: 30px;
     }
 

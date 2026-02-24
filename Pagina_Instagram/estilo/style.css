@@ -2,14 +2,30 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    /*Configuração padrão*/
+    --font-size-padrao: 0.9em;
+    --font-size-icones: 2em;
+
+    /*Cores base do tema escuro*/
+    --dark-color: #0c1014;
+    --dark-font-color: whitesmoke;
+    --dark-btn-color: #25292e;
+    --dark-btn-color2: #444c55;
+
+    /*Cores base do tema claro*/
+    --light-color: white;
+    --light-font-color: black;
+}
+
 body {
-    background-color: #0c1014;
+    background-color: var(--dark-color);
     height: 100vh;
     width: 100vw;
+    color: var(--dark-font-color);
 }
 
 header {
@@ -20,8 +36,8 @@ header {
 }
 
 header>#btnVoltar {
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 2em;
+    background-color: var(--dark-color);
+    font-size: var(--font-size-icones);
     border: 0px;
 
     flex-basis: 50px;
@@ -68,7 +84,6 @@ main>section>#fotoPerfil {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: blue;
 
     float: left;
     margin: 0px 10px 0px 10px;
@@ -113,6 +128,7 @@ section>#infoPerfil>#dadosPerfil {
 }
 
 main>#bioPerfil p {
+    font-size: var(--font-size-padrao);
     width: 100%;
     margin: 5px;
     margin-left: 15px;
@@ -154,6 +170,7 @@ section>#interacao {
 
 section>#interacao>.btnInt {
     background-color: #25292e;
+    color: var(--dark-font-color);
     border: 0px;
     padding: 8px;
     border-radius: 8px;
@@ -216,7 +233,7 @@ section>#selecaoConteudo {
 }
 
 .itemConteudo {
-    font-size: 2em;
+    font-size: var(--font-size-icones);
 }
 
 #publicacoes {
@@ -246,6 +263,6 @@ footer#menuFooter {
 }
 
 footer#menuFooter>div>.iconeFooter {
-    color: white;
-    font-size: 2.1em;
+    color: var(--dark-font-color);
+    font-size: var(--font-size-icones);
 }
