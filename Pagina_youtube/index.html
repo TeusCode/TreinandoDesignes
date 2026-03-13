@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/youtube-ico.ico" type="image/x-icon">
+    <title>YouTube</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        ::root {
+            --cor-fundo-principal: #ffffff;
+            --cor-fundo-secundario: #f3f0f1;
+            --cor-texto-padrao: #0f0f0f;
+            --cor-texto-inversa: #ffffff;
+            --cor-botoes: #f3f0f1;
+            --cor-botoes-inversa: #0f0f0f;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--cor-fundo-principal);
+
+            display: flex;
+            justify-content: center;
+        }
+
+        div#container {
+            background-color: green;
+
+
+            display: grid;
+            grid-template-columns: auto 250px auto;
+            grid-template-rows: 80px 60px 300px 350px;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="headerContainer">
+            <div id="btnMenu">Menu - YOUTUBE</div>
+            <div id="boxPesquisa"><input type="text"></div>
+            <div id="ferramentas">
+                <ul>
+                    <li>Lupa</li>
+                    <li>Audio</li>
+                    <li>Criar</li>
+                    <li>Sino</li>
+                    <li>Perfil</li>
+                </ul>
+            </div>
+            <div id="categoria">
+
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="cardVideo">
+                    <video src=""></video>
+                    <img src="" alt="">
+                    <h3>Titulo do video</h3>
+                    <p>Informações Adicionais</p>
+                </div>
+            </section>
+            <section>
+                <div class="cardShorts">
+                    <h3>Shorts</h3>
+                    <video src=""></video>
+                    <video src=""></video>
+                </div>
+            </section>
+            <section>
+                <aside>
+                    Anuncio
+                </aside>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
